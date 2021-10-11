@@ -1,0 +1,263 @@
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+}
+
+html {
+    background-color: #E6ECF0;
+}
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #0188D1;/*#FFCC01;*/
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition-duration: 0.2s;
+}
+
+.sidenav a:hover {
+    color: #818181;
+}
+
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    margin-right: auto;
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    background-color: #E6ECF0/*#003399;*/;
+    padding-bottom: 60px;
+    top: 0;
+    bottom: 0;
+}
+
+.collection {
+    display: inline-block;
+    padding: 15px;
+}
+
+.collectionextra {
+    display: block;
+    padding: 15px;
+}
+
+.country {
+    display: block;
+}
+
+.countryname{
+    color: #000;
+}
+
+.coin {
+    background-color: #fff;
+    width: 200px;
+    border-radius: 15px;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+    transition-duration: 0.5s;
+}
+
+.coin:hover {
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.coinimage {
+    border-bottom: 1px solid #818181
+}
+
+.coinimage img {
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.coinextra {
+    text-align: center;
+}
+
+.coinextra input[type=text] {
+    padding: 5px;
+    border-radius: 15px;
+    border: 1px solid #E6ECF0;
+
+}
+
+.coinextra input[type=checkbox] {
+    display: none;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    bottom: 148px;
+    margin-left: 185px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.topheaderwrapper {
+    padding: 15px;
+}
+
+.topheader {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.topheaderitem {
+    background-color: #E6ECF0;
+    border-radius: 15px;
+    padding: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.footer {
+    /* text-align: center; */
+    background-color: #E6ECF0;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    display: none;
+}
+
+.footer a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.countryflag {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+
+}
+
+.countryflag img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+    margin-left: -15%
+}
+
+.countryimage {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.countryimage img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+    margin-left: -15%
+}
+
+.hometitle h1{
+    text-align: center;
+}
+
+.totalcoinborder #cointitle {
+    border-bottom: 1px solid #000;
+}
+
+.totalcoinborder {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 450px) {
+    .main {margin-left: 0; padding-bottom: 60px;}
+    .sidenav {width: 0;}
+    .collection {display: block;}
+    .coin {margin-left: auto; margin-right: auto;}
+    .countryname {text-align: center;}
+    .footer {display: block;}
+}
