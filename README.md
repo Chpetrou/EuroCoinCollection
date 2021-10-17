@@ -1,6 +1,8 @@
 # EuroCoinCollection
 A web app for collecting Euro coins.
+
 It has all the Euro coins available for collecting along with images and you can save your collection digitally, so you can view it anywhere you are and whenever you need it.
+
 _Copyright (c) 2021 Chpetrou. All rights reserved._
 
 ### Related resources
